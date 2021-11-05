@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+*{
+  font-family: 'Karla', sans-serif;
+}
+
+Header.nav{
+  background-color: #FFFABF
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #FFFABF;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.app-container{
+  margin: 0;
+  padding: 0;
+  min-height: 85vh;
+  background:#FFFABF;
+  border-radius: 10px;
+  box-shadow: 2px 2px 3px 3px #61dafb;
+  
+}
+
+.add-btn{
+  background-color: #4CAF50; 
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding:10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.btn-header{
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.btn-header:hover{
+  color: #FFFABF
+}
+
+#App{
+  overflow-y: scroll;
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+}
