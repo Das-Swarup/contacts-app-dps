@@ -20,14 +20,6 @@ function App() {
   else {
     initTodo = JSON.parse(localStorage.getItem("todos"));
   }
-  const onDelete = (todo) => {
-    console.log("I am ondelete of todo", todo);
-    setTodos(todos.filter((e) => {
-      return e !== todo;
-    }));
-    localStorage.getItem("todos", JSON.stringify(todos));
-  }
-
   const addContact = (title, desc,num) => {
     console.log("I am Addding this todo", title, desc)
     let sno;

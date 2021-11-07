@@ -1,38 +1,37 @@
 
-import { Todos } from "./Todos";
+import { Contacts } from "./Contacts";
 import React, { useState, useEffect } from 'react';
 <link rel="stylesheet" href="/src/App.css" />
 
-function About() {
-  let initTodo;
-  if (localStorage.getItem("todos") === null) {
-    initTodo = [];
+function AllContacts() {
+  let initContact;
+  if (localStorage.getItem("contacts") === null) {
+    initContact = [];
   }
   else {
-    initTodo = JSON.parse(localStorage.getItem("todos"));
+    initContact = JSON.parse(localStorage.getItem("contacts"));
   }
 
   
-const [todos, setTodos] = useState(initTodo)
+const [contacts, setContacts] = useState(initContact)
 
 useEffect(() => {
-  localStorage.setItem("todos", JSON.stringify(todos));
+  localStorage.setItem("contacts", JSON.stringify(contacts));
 
-}, [todos])
+}, [contacts])
 
-  const onDelete = (todo) => {
-    console.log("I am ondelete of todo", todo);
-    setTodos(todos.filter((e) => {
-      return e !== todo;
-    }));
-    localStorage.getItem("todos", JSON.stringify(todos));
+const onDelete = (contact) => {
+  console.log("I am ondelete of contact", contact);
+  setContacts(contacts.filter((e) => {
+    return e !== contact;
+   }));
+  localStorage.getItem("contacts", JSON.stringify(contacts));
   }
-
   return (
     <div className="app-container" id="App">
-      <Todos todos={todos} onDelete={onDelete} />
+      <Contacts contacts={contacts} onDelete={onDelete} />
     </div>
   );
 };
 
-export default About;
+export default AllContacts;
