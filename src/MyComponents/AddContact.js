@@ -28,12 +28,12 @@ export const AddContact = (props) => {
                     </div>
                     <div className="mb-3">
                         <label htmlFor="mail" className="form-label head-text">E-mail</label>
-                        <input type="text" value={mail} onChange={(e)=>{setMail(e.target.value)}} className="form-control" id="desc"/>
+                        <input type="email" value={mail} onChange={(e)=>{setMail(e.target.value)}} className="form-control" id="desc"/>
                     </div>
 
                     <div className="mb-3">
                         <label htmlFor="num" className="form-label head-text">Number</label>
-                        <input type="value" value={num} onChange={(e)=>{setNum(e.target.value)}} className="form-control" id="num" />
+                        <input type="number" value={num} onChange={(e)=>{setNum(e.target.value)}} className="form-control" id="num" />
                     </div>
                         
                 <button type="submit" className="add-btn">Add</button>

@@ -31,7 +31,7 @@ Header.nav{
 .app-container{
   margin: 0;
   padding: 0;
-  min-height: 85vh;
+  min-height: 90vh;
   background:#B7F2EA;
   border-radius: 10px;
   box-shadow: 2px 2px 3px 3px #61dafb;
@@ -79,4 +79,10 @@ Header.nav{
 
 .title-text{
   font-size: 30px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
