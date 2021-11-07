@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
 
 *{
-  font-family: 'Karla', sans-serif;
+  font-family: 'Balsamiq Sans', cursive;
 }
 
 Header.nav{
-  background-color: #FFFABF
+  background-color: #B7F2EA
 }
 
 .App {
@@ -13,7 +14,7 @@ Header.nav{
 }
 
 .App-header {
-  background-color: #FFFABF;
+  background-color: #B7F2EA;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -31,16 +32,17 @@ Header.nav{
   margin: 0;
   padding: 0;
   min-height: 85vh;
-  background:#FFFABF;
+  background:#B7F2EA;
   border-radius: 10px;
   box-shadow: 2px 2px 3px 3px #61dafb;
   
 }
 
 .add-btn{
-  background-color: #4CAF50; 
+  background-color: #29d0d6; 
   border: none;
   border-radius: 10px;
+  box-shadow: 0 3px 2px  #153741;
   color: white;
   padding:10px 25px;
   text-align: center;
@@ -59,7 +61,7 @@ Header.nav{
 }
 
 .btn-header:hover{
-  color: #FFFABF
+  color: #B7F2EA
 }
 
 #App{
@@ -69,4 +71,12 @@ Header.nav{
 .navbar{
   display: flex;
   flex-direction: row;
+}
+
+.head-text{
+  font-size: 18px;
+}
+
+.title-text{
+  font-size: 30px;
 }
