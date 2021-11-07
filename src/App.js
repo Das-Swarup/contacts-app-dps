@@ -46,10 +46,9 @@ function App() {
   }, [contacts])
   return (
     <Router>
-      <Header title="Your Contacts List" searchBar={false} />
-
+      <Header title="Your Contacts List"/>
       <Switch>
-        <Route exact path="/Home" render={() => {
+        <Route exact path="/add" render={() => {
           return (
             <>
               <AddContact addContact={addContact} />
