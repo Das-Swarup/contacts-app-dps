@@ -13,38 +13,37 @@ import {
 <link rel="stylesheet" href="/src/App.css" />
 
 function App() {
-  let initTodo;
-  if (localStorage.getItem("todos") === null) {
-    initTodo = [];
+  let initContact;
+  if (localStorage.getItem("contacts") === null) {
+    initContact = [];
   }
   else {
-    initTodo = JSON.parse(localStorage.getItem("todos"));
+    initContact = JSON.parse(localStorage.getItem("contacts"));
   }
   const addContact = (title, desc,num) => {
-    console.log("I am Addding this todo", title, desc)
     let sno;
-    if (todos.length === 0) {
+    if (contacts.length === 0) {
       sno = 1
     }
     else {
-      sno = todos[todos.length - 1].sno + 1;
+      sno = contacts[contacts.length - 1].sno + 1;
     }
-    const myTodo = {
+    const myContact = {
       sno: sno,
       title: title,
       desc: desc,
       num: num,
     }
-    setTodos([...todos, myTodo])
-    console.log(myTodo);
+    setContacts([...contacts, myContact])
+    console.log(myContact);
 
   }
-  const [todos, setTodos] = useState(initTodo)
+  const [contacts, setContacts] = useState(initContact)
 
   useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify(todos));
+    localStorage.setItem("contacts", JSON.stringify(contacts));
 
-  }, [todos])
+  }, [contacts])
   return (
     <Router>
       <Header title="Your Contacts List" searchBar={false} />
