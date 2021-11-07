@@ -20,7 +20,7 @@ function App() {
   else {
     initContact = JSON.parse(localStorage.getItem("contacts"));
   }
-  const addContact = (title, desc,num) => {
+  const addContact = (title, mail, num) => {
     let sno;
     if (contacts.length === 0) {
       sno = 1
@@ -31,7 +31,7 @@ function App() {
     const myContact = {
       sno: sno,
       title: title,
-      desc: desc,
+      mail: mail,
       num: num,
     }
     setContacts([...contacts, myContact])
@@ -46,7 +46,7 @@ function App() {
   }, [contacts])
   return (
     <Router>
-      <Header title="Your Contacts List"/>
+      <Header title="Your Contacts List" />
       <Switch>
         <Route exact path="/add" render={() => {
           return (

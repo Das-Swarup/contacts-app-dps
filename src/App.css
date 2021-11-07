@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap");
 
-*{
-  font-family: 'Karla', sans-serif;
+* {
+  font-family: "Karla", sans-serif;
 }
 
-Header.nav{
-  background-color: #FFFABF
+Header.nav {
+  background-color: #fffabf;
 }
 
 .App {
@@ -13,7 +13,7 @@ Header.nav{
 }
 
 .App-header {
-  background-color: #FFFABF;
+  background-color: #fffabf;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,29 +27,28 @@ Header.nav{
   color: #61dafb;
 }
 
-.app-container{
+.app-container {
   margin: 0;
   padding: 0;
   min-height: 85vh;
-  background:#FFFABF;
+  background: #fffabf;
   border-radius: 10px;
   box-shadow: 2px 2px 3px 3px #61dafb;
-  
 }
 
-.add-btn{
-  background-color: #4CAF50; 
+.add-btn {
+  background-color: #4caf50;
   border: none;
   border-radius: 10px;
   color: white;
-  padding:10px 25px;
+  padding: 10px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
 }
 
-.btn-header{
+.btn-header {
   text-decoration: none;
   color: white;
   padding: 5px 10px;
@@ -58,15 +57,15 @@ Header.nav{
   margin-top: 5px;
 }
 
-.btn-header:hover{
-  color: #FFFABF
+.btn-header:hover {
+  color: #fffabf;
 }
 
-#App{
+#App {
   overflow-y: scroll;
 }
 
-.navbar{
+.navbar {
   display: flex;
   flex-direction: row;
 }
