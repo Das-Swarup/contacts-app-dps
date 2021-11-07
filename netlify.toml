@@ -1,0 +1,4 @@
+[build]
+base = "contact-list-dps/"
+publish = "contact-list-dps/all/"
+command = "npm run build"
