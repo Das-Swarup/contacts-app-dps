@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 <link rel="stylesheet" href="/src/App.css" />
-export const AddTodo = (props) => {
+export const AddContact = (props) => {
     const[title,setTitle]=useState("");
     const [mail, setMail] = useState("");
     const [num, setNum] = useState("");
@@ -11,7 +11,7 @@ export const AddTodo = (props) => {
             alert("Name or Number cannot be blank")
         }
         else{
-        props.addTodo(title,mail,num)
+        props.addContact(title,mail,num)
         setTitle("");
         setMail("");
         setNum("");

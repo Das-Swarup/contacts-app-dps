@@ -1,7 +1,7 @@
 
 import "./App.css";
 import Header from "./MyComponents/Header.js";
-import { AddTodo } from './MyComponents/AddTodo.js'
+import { AddContact } from './MyComponents/AddContact.js'
 import AllContacts from './MyComponents/AllContacts.js';
 import React, { useState, useEffect } from 'react';
 import {
@@ -28,7 +28,7 @@ function App() {
     localStorage.getItem("todos", JSON.stringify(todos));
   }
 
-  const addTodo = (title, desc,num) => {
+  const addContact = (title, desc,num) => {
     console.log("I am Addding this todo", title, desc)
     let sno;
     if (todos.length === 0) {
@@ -61,7 +61,7 @@ function App() {
         <Route exact path="/Home" render={() => {
           return (
             <>
-              <AddTodo addTodo={addTodo} />
+              <AddContact addContact={addContact} />
             </>)
         }}>
         </Route>
