@@ -1,6 +1,19 @@
-# Getting Started with Create React App
+# Making a Contacts App using React
+## INTRODUCTION
+------------
+
+The contacts app is a demonstration of the contacts app we use in our daily life. In this project I made 
+a two page application using React-Router and designing is done with both bootstrap and custom css. The backend 
+is implemented using Local_storage instead any external cloud server as it was much more convenient for this
+project. It was entirely done on a existing a frame I built previously named todo-list.
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Required Modules
+
+*React-Router-Dom[https://v5.reactrouter.com/]
+*Node.js[https://nodejs.org/en/download/]
 
 ## Available Scripts
 
@@ -44,22 +57,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 
